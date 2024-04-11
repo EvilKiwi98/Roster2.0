@@ -37,6 +37,9 @@ public class CrusadeCard {
         this.rank = rank;
     }
 
+    public CrusadeCard(){
+    };
+
     // GETTERS AND SETTERS
     public int getUnit_id() {
         return unit_id;
