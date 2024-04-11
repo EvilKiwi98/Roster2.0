@@ -1,4 +1,4 @@
-package com.techelevator.model;
+package com.EvilKiwi98.model;
 
 import java.util.Objects;
 

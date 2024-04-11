@@ -1,8 +1,8 @@
-package com.techelevator.security;
+package com.EvilKiwi98.security;
 
-import com.techelevator.dao.UserDao;
-import com.techelevator.model.Authority;
-import com.techelevator.model.User;
+import com.EvilKiwi98.dao.UserDao;
+import com.EvilKiwi98.model.Authority;
+import com.EvilKiwi98.model.User;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.security.core.GrantedAuthority;

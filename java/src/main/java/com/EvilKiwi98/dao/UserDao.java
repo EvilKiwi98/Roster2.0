@@ -1,7 +1,7 @@
-package com.techelevator.dao;
+package com.EvilKiwi98.dao;
 
-import com.techelevator.model.RegisterUserDto;
-import com.techelevator.model.User;
+import com.EvilKiwi98.model.RegisterUserDto;
+import com.EvilKiwi98.model.User;
 
 import java.util.List;
 

@@ -1,9 +1,9 @@
-package com.techelevator.controller;
+package com.EvilKiwi98.controller;
 
 import javax.validation.Valid;
 
-import com.techelevator.exception.DaoException;
-import com.techelevator.model.*;
+import com.EvilKiwi98.exception.DaoException;
+import com.EvilKiwi98.model.*;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -11,13 +11,12 @@ import org.springframework.security.authentication.UsernamePasswordAuthenticatio
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
-import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.server.ResponseStatusException;
 
-import com.techelevator.dao.UserDao;
-import com.techelevator.security.jwt.JWTFilter;
-import com.techelevator.security.jwt.TokenProvider;
+import com.EvilKiwi98.dao.UserDao;
+import com.EvilKiwi98.security.jwt.JWTFilter;
+import com.EvilKiwi98.security.jwt.TokenProvider;
 
 @RestController
 @CrossOrigin

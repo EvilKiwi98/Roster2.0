@@ -1,4 +1,4 @@
-package com.techelevator.security.jwt;
+package com.EvilKiwi98.security.jwt;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

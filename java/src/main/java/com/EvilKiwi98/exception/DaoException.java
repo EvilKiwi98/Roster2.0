@@ -1,4 +1,4 @@
-package com.techelevator.exception;
+package com.EvilKiwi98.exception;
 
 public class DaoException extends RuntimeException {
     public DaoException() {
