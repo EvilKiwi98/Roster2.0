@@ -30,16 +30,20 @@ public class JdbcCrusadeCardDao implements CrusadeCardDao{
     // SINGLE CARD FETCH BY ID
     @Override
     public CrusadeCard fetchCrusadeCardByID(int crusadeCardId) {
-        CrusadeCard fetchedCard;
+        CrusadeCard fetchedCard = new CrusadeCard();
         String sql = "SELECT * FROM crusade_cards WHERE unit_id = ?";
         SqlRowSet result = jdbcTemplate.queryForRowSet(sql, crusadeCardId);
-    return null;
+        while(result.next()){
+            fetchedCard = mapToRowSet(result);
+        }
+        return fetchedCard;
     }
 
 
     // HELPER MAPPING METHOD
     public CrusadeCard mapToRowSet(SqlRowSet result){
         CrusadeCard newCard = new CrusadeCard();
+        newCard.setUnit_id(result.getInt("unit_id"));
         newCard.setUnit_name(result.getString("unit_name"));
         newCard.setUnit_type(result.getString("unit_type"));
         newCard.setEquipment(result.getString("equipment"));

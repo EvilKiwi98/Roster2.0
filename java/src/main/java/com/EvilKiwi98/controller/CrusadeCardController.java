@@ -14,7 +14,7 @@ public class CrusadeCardController {
 
     public CrusadeCardController(CrusadeCardDao crusadeCardDao) {this.crusadeCardDao = crusadeCardDao;}
 
-    @RequestMapping(path ="/exercise/{userId}", method = RequestMethod.GET)
+    @RequestMapping(path ="/CrusadeCard/{crusadeCardId}", method = RequestMethod.GET)
     public CrusadeCard fetchCrusadeCardById (@PathVariable int crusadeCardId){
         return crusadeCardDao.fetchCrusadeCardByID(crusadeCardId);
     }
