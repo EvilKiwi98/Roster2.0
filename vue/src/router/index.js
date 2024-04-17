@@ -21,30 +21,6 @@ const routes = [
     name: 'home',
     component: HomeView,
     meta: {
-      requiresAuth: true
-    }
-  },
-  {
-    path: "/login",
-    name: "login",
-    component: LoginView,
-    meta: {
-      requiresAuth: false
-    }
-  },
-  {
-    path: "/logout",
-    name: "logout",
-    component: LogoutView,
-    meta: {
-      requiresAuth: false
-    }
-  },
-  {
-    path: "/register",
-    name: "register",
-    component: RegisterView,
-    meta: {
       requiresAuth: false
     }
   }

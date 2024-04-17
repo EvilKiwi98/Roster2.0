@@ -9,3 +9,9 @@
 export default {
 };
 </script>
+
+<style>
+.home {
+  background-color: cornflowerblue;
+}
+</style>
